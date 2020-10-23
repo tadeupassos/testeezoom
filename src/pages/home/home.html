@@ -1,14 +1,27 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+<ion-header no-border>
+  <header-curso
+    titulo="CURSOS E TREINAMENTOS"
+    subTitulo= "Selecione o curso ou treinamento que deseja."
+    botaoVoltar=""
+    urlImg="../../assets/imgs/img01.jpg"
+  ></header-curso>
 </ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v3">docs</a> will be your guide.
-  </p>
+<ion-content class="fundo" fullscreen>
+  <div class="espaco">
+    <ion-row
+      *ngFor="let c of cursos; let first = first; let last = last"
+      class="conteudo"
+      [class.topo]="first"
+      [class.final]="last"
+      [class.linha]="!last"
+      (click)="detalhe(c)"
+    >
+      <ion-col class="flex-center" col-8>
+        {{ c.titulo }}
+      </ion-col>
+      <ion-col col-4>
+        <img class="imagem" [src]="servicos.urlImg + c.img_principal">
+      </ion-col>
+    </ion-row>
+  </div>
 </ion-content>

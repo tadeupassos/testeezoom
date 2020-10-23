@@ -1,0 +1,49 @@
+header-curso {
+  .cartao {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 250px;
+    //background-image: url("../../assets/imgs/img01.jpg");
+  }
+
+  .titulo {
+    color: rgb(305, 44, 53);
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .icone {
+    color: white;
+    font-size: 43px;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .iconeVoltar {
+    color: white;
+    font-size: 25px;
+    margin: auto;
+  }
+
+  .voltar {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .aumenta {
+    padding-top: 35px;
+  }
+
+  .subTitulo {
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+}

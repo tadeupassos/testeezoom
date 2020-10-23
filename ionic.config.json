@@ -1,5 +1,7 @@
 {
   "name": "crudCurso",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

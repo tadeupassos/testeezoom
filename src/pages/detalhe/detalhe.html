@@ -1,0 +1,19 @@
+<ion-header no-border>
+  <header-curso
+    [titulo]="curso.titulo"
+    subTitulo= ""
+    botaoVoltar="mostrar"
+    urlImg="../../assets/imgs/img01.jpg"
+    ></header-curso>
+</ion-header>
+<ion-content class="fundo" fullscreen>
+  <div class="conteudo">
+    {{ curso.descricao }}
+
+    <ion-row class="margem">
+      <ion-col *ngFor="let img of curso.img_galeria" col-6>
+        <img class="imagem" [src]="servicos.urlImg + img">
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

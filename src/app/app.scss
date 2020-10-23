@@ -14,3 +14,18 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+.fundo {
+  background-color: #F3F3F3;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.imagem {
+  border-radius: 20px;
+}
